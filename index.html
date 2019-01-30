@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Current weather & 3-day forecast</title>
+      <!-- including extra lib for adjusting in browsers -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <div class="container">
+         <header class="header">
+            <!-- Searching for city, no type errors handled yet :( -->
+            <div class="search">
+               <input type="text" placeholder="Enter City" id="search-txt">
+               <!-- Adding nice icon here via fontawesome.com -->
+               <a id="search-btn" href="#"><i class="fas fa-chevron-circle-right fa-lg" ></i> </a>
+            </div>
+         </header>
+         <main id="main">
+            <div class="city-icon">
+               <div class="city-icon-holder">
+                  <div id="city-name"><i class="fas fa-map-marker fa-lg"></i></div>
+                  <img src="" alt="weather condition" id="icon">
+                  <div id="condition"></div>
+               </div>
+            </div>
+            <div class="temperature">
+               <div id="temp"><i class="fas fa-thermometer-three-quarters fa-lg"></i></div>
+            </div>
+            <div class="humidity">
+               <div id="humidity-div"><i class="fas fa-tint fa-lg"></i></div>
+            </div>
+            <div class="wind-speed">
+               <div id="wind"><i class="far fa-compass fa-lg"></i></div>
+            </div>
+            <div class="barometric-pressure">
+               <div id="barometric-div"><i class="fas fa-ruler-vertical fa-lg"></i></div>
+            </div>
+            <div class="forecast_day_f">
+               <img src=""  id="icon_f">
+               <div id="forecast_f" align="center"><i class="far fa-calendar-alt fa-lg"></i></div>
+            </div>
+           <div class="forecast_day_s">
+               <img src="" id="icon_s">
+               <div id="forecast_s" align="center"><i class="far fa-calendar-alt fa-lg"></i></div>
+            </div>
+            <div class="forecast_day_t">
+               <img src="" id="icon_t">
+               <div id="forecast_t" align="center"><i class="far fa-calendar-alt fa-lg"></i></div>
+            </div> 
+         </main>
+      </div>
+      <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
+      <script src="js/index.js"></script>
+   </body>
+</html>
