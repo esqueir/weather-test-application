@@ -1,2 +1,2 @@
 # weather-test-application
-Current weather wuth 3-day forecast
+Current weather with 3-day forecast using JavaScript and https://www.apixu.com/api-explorer.aspx API
